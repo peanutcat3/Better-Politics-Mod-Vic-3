@@ -410,7 +410,7 @@ je_bpm_ensure_freedom_of_education = { # Based on 1851-52 moderate expansion of 
 		if = { ### If we have a Democratic Government, we do it FAST
 			limit = {
 				OR = {
-					bpm_democratic_radical_ig_government = bpm_total_num_positions
+					bpm_democratic_radical_ig_government > 0
 					any_law = {
 						has_amendment = amendment_type:bpm_amendment_moderate_freedom_of_education
 					}
@@ -695,7 +695,7 @@ je_bpm_open_the_national_guard = { # Based on the French Prov. Govn't Decree of 
 				limit = {
 					type = amendment_type:bpm_amendment_restricted_national_civic_guard
 				}
-				remove_amendment = yes
+				bpm_remove_amendment = yes
 			}
 		}
 	}
@@ -873,7 +873,7 @@ je_bpm_abolish_land_privileges = { #
 				limit = {
 					type = amendment_type:bpm_amendment_noble_forests
 				}
-				remove_amendment = yes
+				bpm_remove_amendment = yes
 			}
 		}
 		set_variable = {
@@ -1070,7 +1070,7 @@ je_bpm_empower_guilds = { # Based on the February 9th 1849 law
 					limit = {
 						type = amendment_type:bpm_amendment_remnants_of_guilds
 					}
-					remove_amendment = yes
+					bpm_remove_amendment = yes
 				}
 			}
 			add_amendment = {
@@ -1245,7 +1245,7 @@ je_bpm_close_the_national_workshops = { # Based on the Closure of the National W
 				limit = {
 					type = amendment_type:bpm_amendment_national_workshops
 				}
-				remove_amendment = yes
+				bpm_remove_amendment = yes
 			}
 		}
 
